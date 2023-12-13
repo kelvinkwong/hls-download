@@ -1,3 +1,4 @@
 .output
 hls-localise-download
 hls-localise.sh
+__pycache__/

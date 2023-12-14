@@ -24,6 +24,7 @@ PATTERNS['ENCRYPTION_IV'] = '(?:IV=0x)([0-9a-zA-Z]+)'
 PATTERNS['ENCRYPTION_KEY_FORMAT_VERSION'] = '(?:KEYFORMATVERSIONS=")([0-9]+)(?:")'
 PATTERNS['ENCRYPTION_KEY_PATH'] = '(?:URI=\")([0-9a-zA-Z-./]+)(?:")'
 
+encryption_key = None
 for line in manifest.splitlines():
     if line.startswith('#EXT-X-KEY:METHOD=NONE'):
         encryption_key = None
